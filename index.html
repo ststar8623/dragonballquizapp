@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags must come first in the head -->
+		<title>Quiz App</title>
+		<!-- Bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans|Shadows+Into+Light" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-push-2">
+						<h1>Dragon Ball Z Quiz | WHich Dragon Ball Z Character Are You?</h1>
+					</div>
+					<div>
+						<img id="krillin" class="img-responsive" src="img/krillin.png">
+					</div>
+					<div>
+						<img id="float" class="img-responsive" src="img/dragoncloud.png">
+					</div>
+					<div>
+						<img id="float2" class="img-responsive" src="img/dragoncloud.png">
+					</div>
+					<div>
+						<img id="float3" class="img-responsive" src="img/dragoncloud.png">
+					</div>
+					<div>
+						<img id="ball" class="img-responsive" src="img/dragonball1.png">
+					</div>
+					<div>
+						<img id="radar" class="img-responsive" src="img/dragonradar.png">
+					</div>
+					<div>
+						<img id="goku" class="img-responsvie" src="img/gokucloud.png">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-push-2">
+						<div id="main">
+							<ol id="questions">
+							</ol>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg">See Results</button>
+					</div>
+				</div>
+			</div>
+			<div class="results">
+				<div class="results-inner">
+					<div class="subtitle">
+					  	<h3>Your Result</h3>
+					</div>
+					<div class="result hidden result-m_broly quiz-gender_category">
+					    <div class="description">
+					        <h4>I am Broly</h4>
+					        <p>You are Broly, and I'm surprised you managed to make it through this quiz without destroying it! You love being in charge and walking on the wild side. You are fearless and do what you want, when you want. Your friends envy you and might even be a bit scared of you, because let's face it, you're kind of crazy!</p>
+					    </div>
+					    <div class="image">
+					        <img src="http://cdn.mgsrvr.com/q-qr/asset/93027/images/badges/m_broly.gif" alt="I am Broly">
+					    </div>
+					    <div class="clear"></div>
+					</div>
+					<div class="result hidden result-f_bulma quiz-gender_category">
+					    <div class="description">
+					        <h4>I am Bulma</h4>
+					        <p>You are very smart and beautiful, like Bulma. Try not to let these qualities go to your head, otherwise you'll come off as arrogant. You have a strong sense of determination and will do whatever it takes to get what you want. Like Bulma, you surround yourself with good friends who always have your back.</p>
+					    </div>
+					    <div class="image">
+					        <img src="http://cdn.mgsrvr.com/q-qr/asset/93027/images/badges/f_bulma.gif" alt="I am Bulma">
+					    </div>
+					    <div class="clear"></div>
+					</div>
+					<div class="result hidden result-m_goku quiz-gender_category">
+					    <div class="description">
+					        <h4>I am Goku</h4>
+					        <p>You are generally happy and upbeat. Like Goku, you are known for your energetic personality and competitive side. You have a strong moral backbone and are very loyal. You are level headed and logical, and just like Goku, you are open to forgiving even your worst enemies.</p>
+					    </div>
+					    <div class="image">
+					        <img src="http://cdn.mgsrvr.com/q-qr/asset/93027/images/badges/m_goku.gif" alt="I am Goku">
+					    </div>
+					    <div class="clear"></div>
+					</div>
+					<div class="result hidden result-m_vegeta quiz-gender_category">
+					    <div class="description">
+					        <h4>I am Vegeta</h4>
+					        <p>You have a fiery temper and are tough enough to back it up. Like Vegeta, you have a lot of self-confidence. And why wouldn't you? You're awesome! You always try to be the best at whatever you do, which is a very admirable quality.</p>
+					    </div>
+					    <div class="image">
+					        <img src="http://cdn.mgsrvr.com/q-qr/asset/93027/images/badges/m_vegeta.gif" alt="I am Vegeta">
+					    </div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+		
+
+
+		<!-- Included jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- Custom JavaScript -->
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,118 @@
+/* background image */
+.header {
+    background-image: url('../img/dragonball.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 30px auto;
+}
+
+.questions h3 {
+    font-family: 'Pontano Sans', sans-serif;
+    margin: 25px auto;
+    font-weight: bold;
+}
+
+.label {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 30px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+ol {
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ALL image CSS below */
+#krillin {
+    position: fixed;
+    top: 70%;
+    left: -100px;
+    width: 200px;
+    height: auto;
+}
+
+#ball {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+#radar {
+    position: fixed;
+    top: 70%;
+    right: -100px;
+    width: 200px;
+    height: auto;
+}
+
+#goku {
+    top: 0;
+    position: fixed;
+    width: 150px;
+    height: auto;
+    -webkit-animation: floatBubble 10s infinite normal ease-in;
+    animation: floatBubble 10s infinite normal ease-in;
+    z-index: 0;
+}
+
+/* flying cloud */
+#float {
+    position: fixed;
+    width: 100px;
+    height: auto;
+    -webkit-animation: floatBubble 12s infinite normal ease-out;
+    animation: floatBubble 12s infinite normal ease-out;
+    z-index: 0;
+}
+
+#float2 {
+    position: fixed;
+    width: 130px;
+    height: auto;
+    -webkit-animation: floatBubble 15s infinite normal ease-out;
+    animation: floatBubble 15s infinite normal ease-out;
+    z-index: 0;
+}
+
+#float3 {
+    position: fixed;
+    width: 160px;
+    height: auto;
+    -webkit-animation: floatBubble 18s infinite normal ease-out;
+    animation: floatBubble 18s infinite normal ease-out;
+    z-index: 0;
+}
+
+@-webkit-keyframes floatBubble {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes floatBubble {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
