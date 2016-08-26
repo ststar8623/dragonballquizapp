@@ -49,6 +49,12 @@ ul {
     top: 70%;
     right: -100px;
     height: auto;
+    width: 200px;
+}
+
+#ball {
+    box-shadow: 2px 2px 2px black;
+    border-radius: 100%;
 }
 
 #goku, #broly, #vegeta, #bulma {
@@ -134,10 +140,11 @@ ul {
     }
 }
 
+/* result section */
 .result {
     position: fixed;
     display: block;
-    width: 280px;
+    width: 400px;
     height: auto;
     padding: 25px;
     color: white;

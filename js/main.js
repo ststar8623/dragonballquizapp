@@ -114,24 +114,24 @@ for(i = 0; i < questions.length; i++) {
 $('input[type=image]').click(function(){
 	var value = $("input[type='radio']:checked").val();
 	if(value == 2){
-		$('.result-m_vegeta').animate({left: '30px'}, 1000);
+		$('.result-m_vegeta').animate({left: '30px'}, 3000);
 		$('.result-m_vegeta').removeClass('hidden');
 		$('#vegeta').addClass('hidden');
 		$('#float2').addClass('hidden');
 
 	} else if (value == 3){
-		$('.result-m_broly').animate({left: '30px'}, 1000);
+		$('.result-m_broly').animate({left: '30px'}, 3000);
 		$('.result-m_broly').removeClass('hidden');
 		$('#broly').addClass('hidden');
 		$('#float3').addClass('hidden');
 
 	} else if (value == 0){
-		$('.result-m_goku').animate({right: '30px'}, 1000);
+		$('.result-m_goku').animate({right: '30px'}, 3000);
 		$('.result-m_goku').removeClass('hidden');
 		$('#goku').addClass('hidden');
 
 	} else if (value == 1){
-		$('.result-f_bulma').animate({right: '30px'}, 1000);
+		$('.result-f_bulma').animate({right: '30px'}, 3000);
 		$('.result-f_bulma').removeClass('hidden');
 		$('#bulma').addClass('hidden');
 		$('#float').addClass('hidden');
@@ -169,6 +169,21 @@ $(document).ready(function(){
 	})
 })
 
+// sound effect //
+$(document).ready(function(){
+	var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'mp3/dragonballscream.mp3');
+
+	$.get();
+
+	audioElement.addEventListener('load', function(){
+		audioElement.play();
+	}, true);
+
+	$('#submit').click(function(){
+		audioElement.play();
+	});
+});
 
 
 
