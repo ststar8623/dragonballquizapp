@@ -149,6 +149,25 @@ ul {
     padding: 25px;
     color: white;
     border-radius: 50px;
+
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.result:hover {
+    transform: rotatey(-360deg);
+    -webkit-transform: rotatey(-360deg);
+    -moz-transform: rotatey(-360deg);
+    -ms-transform: rotatey(-360deg);
+    -o-transform: rotatey(-360deg);
 }
 
 .result-m_vegeta {
