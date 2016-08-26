@@ -37,37 +37,52 @@ ul {
     list-style-type: none;
 }
 
+#submit {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+
 /* ALL image CSS below */
-#krillin {
-    position: fixed;
-    top: 70%;
-    left: -100px;
-    width: 200px;
-    height: auto;
-}
-
-#ball {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-}
-
 #radar {
     position: fixed;
     top: 70%;
     right: -100px;
-    width: 200px;
+    height: auto;
+}
+
+#goku, #broly, #vegeta, #bulma {
+    top: 0;
+    position: fixed;
     height: auto;
 }
 
 #goku {
-    top: 0;
-    position: fixed;
-    width: 150px;
-    height: auto;
-    -webkit-animation: floatBubble 10s infinite normal ease-in;
-    animation: floatBubble 10s infinite normal ease-in;
+    -webkit-animation: floatBubble 15s infinite normal;
+    animation: floatBubble 15s infinite normal;
     z-index: 0;
+    width: 140px;
+}
+
+#broly {
+    -webkit-animation: floatBubble 24s infinite normal;
+    animation: floatBubble 24s infinite normal;
+    z-index: 0;
+    width: 100px;
+}
+
+#vegeta {
+    -webkit-animation: floatBubble 18s infinite normal;
+    animation: floatBubble 18s infinite normal;
+    z-index: 0;
+    width: 50px;
+}
+
+#bulma {
+    -webkit-animation: floatBubble 20s infinite normal;
+    animation: floatBubble 20s infinite normal;
+    z-index: 0;
+    width: 50px;
 }
 
 /* flying cloud */
@@ -75,8 +90,9 @@ ul {
     position: fixed;
     width: 100px;
     height: auto;
-    -webkit-animation: floatBubble 12s infinite normal ease-out;
-    animation: floatBubble 12s infinite normal ease-out;
+    top: 40px;
+    -webkit-animation: floatBubble 20s infinite normal;
+    animation: floatBubble 20s infinite normal;
     z-index: 0;
 }
 
@@ -84,8 +100,9 @@ ul {
     position: fixed;
     width: 130px;
     height: auto;
-    -webkit-animation: floatBubble 15s infinite normal ease-out;
-    animation: floatBubble 15s infinite normal ease-out;
+    top: 20px;
+    -webkit-animation: floatBubble 18s infinite normal;
+    animation: floatBubble 18s infinite normal;
     z-index: 0;
 }
 
@@ -93,8 +110,9 @@ ul {
     position: fixed;
     width: 160px;
     height: auto;
-    -webkit-animation: floatBubble 18s infinite normal ease-out;
-    animation: floatBubble 18s infinite normal ease-out;
+    top: 30px;
+    -webkit-animation: floatBubble 24s infinite normal;
+    animation: floatBubble 24s infinite normal;
     z-index: 0;
 }
 
@@ -116,3 +134,44 @@ ul {
     }
 }
 
+.result {
+    position: fixed;
+    display: block;
+    width: 280px;
+    height: auto;
+    padding: 25px;
+    color: white;
+    border-radius: 50px;
+}
+
+.result-m_vegeta {
+    top: 3%;
+    left: -400px;
+    background-color: #090FBA;
+}
+
+.result-m_goku {
+    top: 3%;
+    right: -400px;
+    background-color: #BD0906;
+}
+
+.result-m_broly {
+    bottom: 3%;
+    left: -400px;
+    background-color: #D1D10D;
+}
+
+.result-f_bulma {
+    bottom: 3%;
+    right: -400px;
+    background-color: #0DD16F;
+}
+
+.description h4 {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

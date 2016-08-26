@@ -111,34 +111,54 @@ for(i = 0; i < questions.length; i++) {
 }
 
 // test result
-$('button[type=button').click(function(){
+$('input[type=image]').click(function(){
 	var value = $("input[type='radio']:checked").val();
-	if(value == 0){
-		$('.result-m_vegeta').fadeIn(1000).removeClass('hidden');
-		return
-	} else if (value == 1){
-		$('.result-m_broly').fadeIn(1000).removeClass('hidden');
-		return
-	} else if (value == 2){
-		$('.result-m_goku').fadeIn(1000).removeClass('hidden');
-		return
-	} else {
-		$('.result-f_bulma').fadeIn(1000).removeClass('hidden');
-		return
-	}
+	if(value == 2){
+		$('.result-m_vegeta').animate({left: '30px'}, 1000);
+		$('.result-m_vegeta').removeClass('hidden');
+		$('#vegeta').addClass('hidden');
+		$('#float2').addClass('hidden');
 
+	} else if (value == 3){
+		$('.result-m_broly').animate({left: '30px'}, 1000);
+		$('.result-m_broly').removeClass('hidden');
+		$('#broly').addClass('hidden');
+		$('#float3').addClass('hidden');
+
+	} else if (value == 0){
+		$('.result-m_goku').animate({right: '30px'}, 1000);
+		$('.result-m_goku').removeClass('hidden');
+		$('#goku').addClass('hidden');
+
+	} else if (value == 1){
+		$('.result-f_bulma').animate({right: '30px'}, 1000);
+		$('.result-f_bulma').removeClass('hidden');
+		$('#bulma').addClass('hidden');
+		$('#float').addClass('hidden');
+	}
 });
 
-
+$('.result').click(function(){	
+	$(this).addClass('hidden');
+	if('.result-m_vegeta'){
+		$('#vegeta').removeClass('hidden');
+		$('#float2').removeClass('hidden');
+	}
+	if('.result-m_broly'){
+		$('#broly').removeClass('hidden');
+		$('#float3').removeClass('hidden');
+	}
+	if('.result-m_goku'){
+		$('#goku').removeClass('hidden');
+	} 
+	if('.result-f_bulma'){
+		$('#bulma').removeClass('hidden');
+		$('#float').removeClass('hidden');
+	}
+})
 
 // animation for hover on images //
 $(document).ready(function(){
-	$('#krillin').mouseenter(function(){
-		$(this).animate({left: '0px'}, 1000);
-	});
-	$('#krillin').mouseleave(function(){
-		$(this).animate({left: '-100px'}, 1000);
-	});
 	$('#radar').mouseenter(function(){
 		$(this).animate({right: '0px'}, 1000);
 		$(this).addClass('animated bounce');
